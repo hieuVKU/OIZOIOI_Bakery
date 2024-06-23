@@ -1,57 +1,60 @@
-body{
-    background-color: #F8F7F6;
+body {
+  background-color: #f8f7f6;
 }
-form{
-    margin-top: 30px;
+form {
+  margin-top: 30px;
 }
-thead{
-    background-color: #E4DED9;
+thead {
+  background-color: #e4ded9;
 }
-.txt-about{
-    font-size: 20px;
-    font-weight: bold;
-    color: #A17D60;
-    font-family: 'Open Sans', sans-serif;
-    text-align: bottom;
-    margin-top: 20px;
+.txt-about {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a17d60;
+  font-family: "Open Sans", sans-serif;
+  text-align: bottom;
+  margin-top: 20px;
 }
-.container-image{
-    height: 300px;
-    width: 423px;
+.container-image {
+  height: 300px;
+  width: 423px;
 }
-.text{
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: left;
+.text {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
 }
-.search{
-    border: 0;
-    width: 9em;
-    height: 50px;
-    background-color: #E4DED9;
+.search {
+  border: 0;
+  width: 9em;
+  height: 50px;
+  background-color: #e4ded9;
 }
-.search-icon{
-    fill: #A17D60;
-    border: 0;
-    width: 25px;
-    height: 25px;
+.search-icon {
+  fill: #a17d60;
+  border: 0;
+  width: 25px;
+  height: 25px;
 }
-.form-select{
-    height: 50px;
-    border: 0;
-    border-radius: 0;
-    font-size: 20px;
-    background-color: #F2F1F1;
+.form-select {
+  height: 50px;
+  border: 0;
+  border-radius: 0;
+  font-size: 20px;
+  background-color: #f2f1f1;
 }
-.logo{
-    width: 15em;
-    height: 10em;
+.logo {
+  width: 15em;
+  height: 10em;
 }
-.table{
-    margin-top: 30px ;
-    font-size: 20px;
+.table {
+  margin-top: 30px;
+  font-size: 20px;
 }
-td, th{
-    border-bottom: 3px dashed #D0CBC7 !important;
+td,
+th {
+  border-bottom: 3px dashed #d0cbc7 !important;
 }
-
+.content {
+  background-color: #f8f7f6;
+}

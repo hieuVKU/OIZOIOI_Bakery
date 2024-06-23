@@ -2,22 +2,22 @@
 body {
   background-color: #f3efed;
 }
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family:'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 
 * {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
 header {
-  background-color: #E4DED9;
+  background-color: #e4ded9;
 }
 
 .logo {
@@ -53,16 +53,15 @@ nav {
 .menu ul li a {
   font-weight: bolder;
   text-transform: uppercase;
-  color: #A17D60;
+  color: #a17d60;
   padding: 30px 50px;
   text-decoration: none;
   font-size: 20px;
 }
 
 .menu ul li a:hover {
-  background-color: #F8F7F6;
+  background-color: #f8f7f6;
 }
-
 .search-container {
   display: flex;
   align-items: center;
@@ -120,7 +119,6 @@ nav {
 }
 
 .slide img {
-  
   width: auto;
   height: 100%;
   object-fit: cover;
@@ -161,7 +159,7 @@ nav {
 
 .list img {
   border-radius: 25px;
-  background-color: #E4DED9;
+  background-color: #e4ded9;
   max-width: 250px;
   margin-right: 10px;
 }
@@ -220,7 +218,7 @@ nav {
 
   .menu-button i {
     font-size: 30px;
-    color:  #A17D60;
+    color: #a17d60;
   }
 
   .menu {
@@ -288,7 +286,7 @@ nav {
   display: none;
   cursor: pointer;
   padding: 10px;
-  background-color: #E4DED9;
+  background-color: #e4ded9;
   color: white;
   border: none;
 }
@@ -303,7 +301,7 @@ nav {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -325,10 +323,10 @@ nav {
 /* Responsive styles */
 @media (max-width: 600px) {
   .menu-button {
-      display: block;
+    display: block;
   }
   .dropdown {
-      display: block;
+    display: block;
   }
 }
 
@@ -336,7 +334,7 @@ nav {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #E4DED9;
+  background-color: #e4ded9;
   padding: 20px;
 }
 
@@ -353,8 +351,6 @@ footer {
   flex: 1 1 100%;
   margin: 10px 0;
 }
-
-
 
 .info pre {
   white-space: pre-wrap;
@@ -381,29 +377,29 @@ footer {
 
 @media (min-width: 600px) {
   .footer-container > div {
-      flex: 1;
+    flex: 1;
   }
 
   .info pre {
-      text-align: center;
+    text-align: center;
   }
 }
 
 @media (min-width: 900px) {
   .footer-container > div {
-      flex: 1;
+    flex: 1;
   }
 
   .logo {
-      flex: 1;
+    flex: 1;
   }
 
   .info {
-      flex: 2;
+    flex: 2;
   }
 
   .contact-info {
-      flex: 1;
-      justify-content: flex-end;
+    flex: 1;
+    justify-content: flex-end;
   }
 }
