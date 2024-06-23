@@ -1,5 +1,5 @@
 body {
-  background-image: url("/TKW/assets/image/contact_img/backcontact.jpg") !important;
+  background-image: url("assets/image/contact_img/backcontact.jpg") !important;
   background-size: cover;
 }
 /* Contact form  */
