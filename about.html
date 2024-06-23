@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="menu">
+        <div class="logo">
+            <a href="#"><img src="assets/image/logo.png" alt="Logo"></a>
+        </div>
+        <div class="menu-links" id="menuLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="shopsystem.html">Shop System</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search-container" id="searchContainer">
+            <input type="text" placeholder="Search">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="menu-button" id="menuButton">
+            <i class="fa fa-bars"></i> Menu
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="index.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="shopsystem.html">Shop System</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <script>
+            // JavaScript to toggle the dropdown menu
+            document.getElementById('menuButton').addEventListener('click', function() {
+                document.getElementById('dropdownMenu').classList.toggle('show');
+            });
+    
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.menu-button')) {
+                    var dropdowns = document.getElementsByClassName('dropdown-content');
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+      </header>
+    </nav>
+    <div class="b-example-divider">
+        <h5 class="txt-about">HOME ▶ ABOUT</h5>
+    </div>
+    <div class="col">
+        <div class="card first">
+          <div class="row g-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 hover-img">
+                <img src="image/pngegg (18).png" alt="" style="height: 250px;width: 350px;">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h1 class="card-title">ABOUT OIZOIOI</h1>
+                <p class="card-text ">OIZOIOI Bakery is proud to bring fresh and delicious pastries, made from quality ingredients. With a love for the art of baking, we are constantly innovating to bring you wonderful experiences!</p>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card second">
+          <div class="row g-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+                <div class="card-body">
+                  <h1 class="card-title ">MISSION</h1>
+                  <p class="card-text">We are committed to using fresh ingredients to ensure deliciousness and safety for health.</p>
+                  <p class="card-text">Each cake is created with creativity and love. We always put customers first, with the desire to bring satisfaction when enjoying cakes at the shop.</p>
+                </div>
+            </div>
+            <div class="col-md-4 hover-img">
+                <img src="image/pngegg (10).png" alt="" style="height: 300px;width: 350px;">
+            </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card first">
+        <div class="row g-0">
+          <div class="col-md-3 " >
+            <div class="card-body d-flex justify-content-center" style="height: 250px;">
+              <h1 class="card-title">CORE VALUES</h1>
+            </div>
+          </div>
+          <div class="col-md-3 image-container">
+            <div class="blur-image hover-img">
+              <img src="image/pngegg (100).png" alt="" style="height: 250px;width: 250px;">
+            </div>
+            <div class="image-caption">Create fresh, new, quality and healthy products.</div>
+          </div>
+          <div class="col-md-3 image-container">
+            <div class="blur-image hover-img">
+              <img src="image/pngegg (101).png" alt="" style="height: 250px;width: 250px;">
+            </div>
+            <div class="image-caption">Always listen to all feedback from customers to provide good experiences.</div>
+          </div>
+          <div class="col-md-3 image-container">
+            <div class="blur-image hover-img">
+              <img src="image/pngegg (102).png" alt="" style="height: 250px;width: 250px;">
+            </div>
+            <div class="image-caption">Build a culture of enthusiastic and creative staff.</div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <footer>
+        
+      <div class="logo" >
+          <img style="height: 150px;" src="assets/image/logo2.png"> </div>
+      <div class="info">
+          <pre>
+              CÔNG TY TNHH OIZOIOI BAKERY
+              Địa chỉ: Tầng 26, Tòa nhà CII Tower, số 152 Điện Biên Phủ, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+              Điện thoại: (028) 39309168
+              Tổng đài: 1900-1533
+              Hộp thư góp ý: ozoioibkrfeedback@oizoioi.com.vn
+          </pre>
+      </div>
+      <div class="contact-info">
+          <div>
+          <i class="fa-brands fa-facebook"></i>
+          <p>facebook</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>email</p>
+          </div>
+      </div>
+      
+  </footer>
+  <p style="background-color: #E4DED9;" class="copyright">Copyright © 2024 OIZOIOI Bakery. All Rights Reserved.</p>
+  
+</body>
+</html>

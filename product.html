@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/TKW/css/product.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="menu">
+          <div class="logo">
+              <a href="#"><img src="assets/image/logo.png" alt="Logo"></a>
+          </div>
+          <div class="menu-links" id="menuLinks">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="product.html">Product</a></li>
+                  <li><a href="shopsystem.html">Shop System</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="search-container" id="searchContainer">
+              <input type="text" placeholder="Search">
+              <button>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+          </div>
+          <div class="menu-button" id="menuButton">
+              <i class="fa fa-bars"></i> Menu
+          </div>
+          <div class="dropdown">
+              <div class="dropdown-content" id="dropdownMenu">
+                  <a href="index.html">Home</a>
+                  <a href="product.html">Product</a>
+                  <a href="shopsystem.html">Shop System</a>
+                  <a href="about.html">About</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+          </div>
+          <script>
+              // JavaScript to toggle the dropdown menu
+              document.getElementById('menuButton').addEventListener('click', function() {
+                  document.getElementById('dropdownMenu').classList.toggle('show');
+              });
+      
+              // Close the dropdown if the user clicks outside of it
+              window.onclick = function(event) {
+                  if (!event.target.matches('.menu-button')) {
+                      var dropdowns = document.getElementsByClassName('dropdown-content');
+                      for (var i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                              openDropdown.classList.remove('show');
+                          }
+                      }
+                  }
+              }
+          </script>
+        </header>
+    <!-- Product Grid -->
+    <div class="col-12 col-lg-11  centered-div centered-div2">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center">
+          <!-- Product 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/redvelvet1.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">RED VELVET CAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 6</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$10.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/oreo2.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">OREO CHOCOCAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 10</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$8.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/machacake3.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">MATCHA CAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 10</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/tiramisu4.jpg"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">TIRAMISU</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 10</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Second row of products -->
+          <!-- Product 5 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/pancake5.jfif"
+                  class="card-img-top product-image"
+                  alt="Tiramisu"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">PANCAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 10</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 6 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/ChocoCreamPie6.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">CHOCO CREAM PIE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 10</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 7 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/soufflepancake7.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">SOUFFLE PANCAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 6</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 8 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/cheesecake8.jpg"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">CHEESE CAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 10</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$10.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- product 9 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/macraron9.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">MACARON​ SET</h5>
+                <ul class="card-text">
+                  <li>
+                    1 cake
+                  </li>
+                  <li>Set 4 cakes</li>
+                  <li>Set 6 cakes,...</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- product 10 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/creampuff10.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">CREAM PUFFS
+                </h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 12 <br />
+                  </li>
+                  <li>Bento cake: size 10</li>
+                  <li>Mini cake: size 6</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- product 11 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/straberryroll11.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">STRABERRY ROLL CAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original roll: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>1 piece</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- product 12 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/eggtart12.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">EGG TART SET</h5>
+                <ul class="card-text">
+                  <li>
+                    1 tart
+                  </li>
+                  <li>Set 4 tarts</li>
+                  <li>Set 6 tarts,..</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 13 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/donutset13.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">DONUTS SET</h5>
+                <ul class="card-text">
+                  <li>
+                    1 cake
+                  </li>
+                  <li>Set 4 cakes</li>
+                  <li>Set 6 cakes,...</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 14 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/crossant14.1.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">CROSSANT</h5>
+                <ul class="card-text">
+                  <li>
+                    Large cake: 100gr
+                  </li>
+                  <li>Small cake: 60gr</li>
+                  <li>Normal cake</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 15 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/waffle15.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">WAFFLE CREAM</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 12
+                  </li>
+                  <li>Bento cake: size 10</li>
+                  <li>Mini cake: size 6</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 16 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/mochiset16.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">MOCHI SET</h5>
+                <ul class="card-text">
+                  <li>
+                    1 cake
+                  </li>
+                  <li>Set 4 cakes</li>
+                  <li>Set 6 cakes,...</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 17 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/flancake17.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">FLAN CAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 12
+                  </li>
+                  <li>Mini cake: size 6</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$8.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 18 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/bluberrypananacota18.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">BLUEBERRY PANACOTA</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 10
+                  </li>
+                  <li>Mini cake: size 6</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 19 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/matchacheese19.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">MATCHA CHEESE CAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 10
+                  </li>
+                  <li>Mini cake: size 6</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 20 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/puddingcake20.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">PUDDING CAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 10 
+                  </li>
+                  <li>Mini cake: size 6</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 21 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/chocoroll21.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">CHOCO ROLL CAKE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>1 piece</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 22 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/chiapudding22.jpg"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">CHIA PUDDING</h5>
+                <ul class="card-text">
+                  <li>
+                    Large cup: size 10
+                  </li>
+                  <li>Original cup: size 6</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 23 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/yogurtmousse23.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">YOGURT MOUSSE</h5>
+                <ul class="card-text">
+                  <li>
+                    Large cup: size 10
+                  </li>
+                  <li>Original cup: size 6</li>
+                  <li>Mini cup</li>
+                </ul>
+                <p class="text-end font-price">$7.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 24 -->
+          <div class="col mb-4">
+            <div class="card h-100 card-product smaller-width mx-auto">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 200px"
+              >
+                <img
+                  src="/TKW/assets/image/product_img/Matchacrepe24.jfif"
+                  class="card-img-top product-image"
+                  alt="Red Velvet Cake"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title font">MATCHA CREPE</h5>
+                <ul class="card-text">
+                  <li>
+                    Original cake: size 18 <br />
+                    (6 pieces/100g)
+                  </li>
+                  <li>Mini cake: size 10</li>
+                </ul>
+                <p class="text-end font-price">$6.00</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <footer style="margin-left: 0px;">
+        
+      <div class="logo" >
+          <img style="height: 150px;" src="assets/image/logo2.png"> </div>
+      <div class="info">
+          <pre>
+              CÔNG TY TNHH OIZOIOI BAKERY
+              Địa chỉ: Tầng 26, Tòa nhà CII Tower, số 152 Điện Biên Phủ, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+              Điện thoại: (028) 39309168
+              Tổng đài: 1900-1533
+              Hộp thư góp ý: ozoioibkrfeedback@oizoioi.com.vn
+          </pre>
+      </div>
+      <div class="contact-info">
+          <div>
+          <i class="fa-brands fa-facebook"></i>
+          <p>facebook</p>
+          </div>
+          <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>email</p>
+          </div>
+      </div>
+      
+  </footer>
+  <p style="background-color: #E4DED9;" class="copyright">Copyright © 2024 OIZOIOI Bakery. All Rights Reserved.</p>
+  
+  </body>
+</html>

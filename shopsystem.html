@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="shopsystem.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <a href="#"><img src="assets/image/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-links" id="menuLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="shopsystem.html">Shop System</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search-container" id="searchContainer">
+                <input type="text" placeholder="Search">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="menu-button" id="menuButton">
+                <i class="fa fa-bars"></i> Menu
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="index.html">Home</a>
+                    <a href="product.html">Product</a>
+                    <a href="shopsystem.html">Shop System</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <script>
+                // JavaScript to toggle the dropdown menu
+                document.getElementById('menuButton').addEventListener('click', function() {
+                    document.getElementById('dropdownMenu').classList.toggle('show');
+                });
+        
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.menu-button')) {
+                        var dropdowns = document.getElementsByClassName('dropdown-content');
+                        for (var i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        
+        </nav>
+    <div class="b-example-divider d-flex">
+        <div class="col-md-1"></div>
+        <h5 class="txt-about">FIND THE STORE</h5>
+    </div>
+    <div class="col">
+        <div class="con">
+          <div class="row g-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 hover-img">
+                <div class="col">
+                    <form class="d-flex">
+                        <select class="form-select">
+                            <option selected="">Select Region</option>
+                            <option value="1">153 Nui Thanh</option>
+                            <option value="2">712 Tran Dai Nghia</option>
+                            <option value="3">85 Nguyen Dinh Chieu</option>
+                            <option value="4">906 Đ. 2 Thang 9</option>
+                            <option value="5">96 Le Loi</option>
+                            <option value="6">469 Dien Bien Phu</option>
+                        </select>
+                        <button class="search d-flex align-items-center justify-content-center" >
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="container-image d-flex align-items-center justify-content-center">
+                    <img class="logo" src="image/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <table class="table">
+                    <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th style="border-left: 3px dashed #D0CBC7" scope="col">Store</th>
+                      <th style="border-left: 3px dashed #D0CBC7" scope="col">Phone Number</th>
+                      <th style="border-left: 3px dashed #D0CBC7" scope="col">Open Time</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>153 Nui Thanh</td>
+                      <td>0236 3838 268</td>
+                      <td>5:30 AM - 22:30 PM</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>712 Tran Dai Nghia</td>
+                      <td>0966 2200 218</td>
+                      <td>5:30 AM - 22:30 PM</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>85 Nguyen Dinh Chieu</td>
+                      <td>0386 0484 225</td>
+                      <td>5:30 AM - 22:30 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>906 Đ. 2 Thang 9</td>
+                        <td>0448 6666 133</td>
+                        <td>5:30 AM - 22:30 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>96 Le Loi</td>
+                        <td>0332 3453 998</td>
+                        <td>5:30 AM - 22:30 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>469 Dien Bien Phu</td>
+                        <td>0834 2984 134</td>
+                        <td>5:30 AM - 22:30 PM</td>
+                    </tr>
+                    </tbody>
+                </table>      
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer>
+        
+        <div class="logo" >
+            <img style="height: 150px;" src="assets/image/logo2.png"> </div>
+        <div class="info">
+            <pre>
+                CÔNG TY TNHH OIZOIOI BAKERY
+                Địa chỉ: Tầng 26, Tòa nhà CII Tower, số 152 Điện Biên Phủ, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+                Điện thoại: (028) 39309168
+                Tổng đài: 1900-1533
+                Hộp thư góp ý: ozoioibkrfeedback@oizoioi.com.vn
+            </pre>
+        </div>
+        <div class="contact-info">
+            <div>
+            <i class="fa-brands fa-facebook"></i>
+            <p>facebook</p>
+            </div>
+            <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>email</p>
+            </div>
+        </div>
+        
+    </footer>
+    <p style="background-color: #E4DED9;" class="copyright">Copyright © 2024 OIZOIOI Bakery. All Rights Reserved.</p>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+  background-image: url("/TKW/assets/image/contact_img/backcontact.jpg") !important;
+  background-size: cover;
+}
+/* Contact form  */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 3em;
+  padding-left: 2.8em;
+  padding-right: 2.8em;
+  padding-bottom: 2.1em;
+  border: 2px dashed #a79484;
+  border-radius: 20px;
+  background-color: #e5e6e6;
+  /* box-shadow: 0 0 0 4px #eaddca, 2px 2px 4px 2px rgba(0, 0, 0, 0.5); */
+  transition: 0.4s ease-in-out;
+}
+::placeholder {
+  color: #766556;
+  text-align: center;
+}
+
+.form .heading {
+  padding-left: 20%em;
+  color: #766556;
+  background-color: transparent;
+  letter-spacing: 0.5em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  margin: 0px;
+}
+.heading {
+  font-size: 150%;
+}
+
+.form .input {
+  margin: 0px;
+  outline: none;
+  padding: 0.5em;
+  border: 1px solid #766556;
+  color: #766556;
+  border-radius: 10px;
+  background-color: #fffdf9;
+  text-align: center;
+  size: cover;
+}
+
+.form .btn2 {
+  margin: 0px;
+  align-self: center;
+  margin-top: 2em;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #141312;
+  font-weight: bold;
+  letter-spacing: cover;
+  transition: 0.4s ease-in-out opacity, 0.1s ease-in-out active;
+  padding: 10px 100px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.form .btn2:hover {
+  opacity: 0.8;
+}
+
+.form .btn2:active {
+  transform: translateX(0.1em) translateY(0.1em);
+  box-shadow: none;
+}
+/* container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 40px;
+}
+
+/*  đặt div bắt đầu từ đường grid thứ 2 và kết thúc tại đường grid thứ 10 */
+.form-container {
+  grid-column: 4 / 10;
+  padding-top: 40px;
+}
+/* info contact */
+
+/* social media */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.icon-top {
+  margin-bottom: 50px;
+}
+.icon {
+  width: 32px; /* Adjust this value to change the size of the icons */
+  height: 32px; /* Adjust this value to change the size of the icons */
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.font-info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  /* padding-right: 10px; */
+}
+.font-italic {
+  font-style: italic;
+  font-weight: bolder;
+}
